@@ -32,6 +32,12 @@ client.on("messageCreate", message => {
       });
     });
   }
+
+  if (message.content === "teste") {
+    message.reply({
+      content: "Ta funcionando 👍 ",
+    });
+  }
 });
 
 // Promise.resolve(promise).then(function(buffer){
